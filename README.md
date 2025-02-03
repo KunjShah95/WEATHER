@@ -37,24 +37,38 @@ To run the project, use the following command:
 ```
 npm start
 ```
-Future Updates
+
+#Future Updates
+
 Adding more weather metrics 🌡️
+
 Improving the user interface for better user experience 🎨
+
 Implementing a mobile-friendly version 📱
-Contributing
+
+#Contributing:
+
 Contributions are welcome! Please read the contributing guidelines first. You can:
 
 Fork the repository
-Create a new branch (git checkout -b feature-branch)
-Commit your changes (git commit -m 'Add some feature')
-Push to the branch (git push origin feature-branch)
+
+Create a new branch `(git checkout -b feature-branch)`
+
+Commit your changes `(git commit -m 'Add some feature')`
+
+Push to the branch `(git push origin feature-branch)`
+
 Create a new Pull Request
-License
+
+#License:
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
+Contact:
 If you have any questions, feel free to reach out:
 
 GitHub Issues
+
 Email
+
 Made with ❤️ by Kunj Shah and Priyanshi Agarwal
