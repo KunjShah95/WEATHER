@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <script src="frontend logic.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e9ecef;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="text"] {
+        padding: 10px;
+        width: calc(100% - 120px);
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #forecast {
+        margin-top: 20px;
+      }
+      .forecast-item {
+        background-color: #f8f9fa;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      #favoritesList {
+        margin-top: 20px;
+        list-style-type: none;
+        padding: 0;
+      }
+      #favoritesList li {
+        background-color: #e9ecef;
+        padding: 5px;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      .loading {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchButton">Search</button>
+      <label>
+        <input type="checkbox" id="unitToggle" checked />
+        Celsius
+      </label>
+      <div id="cityName"></div>
+      <div id="temperature"></div>
+      <div id="condition"></div>
+      <div id="forecast"></div>
+      <div class="loading" id="loadingIndicator">Loading...</div>
+
+      <h2>Popular Cities</h2>
+      <div class="popular-cities">
+        <button data-city="New York">New York</button>
+        <button data-city="Los Angeles">Los Angeles</button>
+        <button data-city="Chicago">Chicago</button>
+        <button data-city="Houston">Houston</button>
+        <button data-city="Phoenix">Phoenix</button>
+      </div>
+
+      <h2>Favorite Cities</h2>
+      <ul id="favoritesList"></ul>
+    </div>
+
+    <script>
+      // Call updateFavoritesList on page load to display saved favorites
+      updateFavoritesList();
+    </script>
+  </body>
+</html>
