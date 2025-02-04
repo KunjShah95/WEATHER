@@ -71,4 +71,4 @@ GitHub Issues
 
 Email
 
-Made with ❤️ by Kunj Shah and Priyanshi Agarwal
+Made with ❤️ by Kunj Shah and Priyanshi Gajjar
